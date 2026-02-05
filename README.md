@@ -9,4 +9,4 @@ Based on mkhmtolzhas' rice. Meant for personal use only.
 
 ## Other Dependencies (Read them to install properly)
 - Assuming sddm is installed, use this https://github.com/uiriansan/SilentSDDM as a theme
-- Auto-stop animated wallpapers https://github.com/pvtoari/mpvpaper-stop
+- Auto-stop animated wallpapers https://github.com/pvtoari/mpvpaper-stop (dependencies: cmake, cjson)
