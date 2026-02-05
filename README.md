@@ -1,5 +1,5 @@
 # NeKoRoSYS's Arch Linux Rice
-Based on [mkhmtolzhas' rice](https://github.com/mkhmtolzhas/Invincible-Dots). Meant for personal use only.
+Based on [mkhmtolzhas' rice](https://github.com/mkhmtolzhas/Invincible-Dots).
 
 ## Notes
 - This repo assumes you already installed `base-devel`, `git`, `yay`, `flatpak`.
