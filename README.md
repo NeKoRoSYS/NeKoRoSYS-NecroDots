@@ -38,6 +38,11 @@ Based on [mkhmtolzhas' rice](https://github.com/mkhmtolzhas/Invincible-Dots).
 ## Dependencies
 - Auto-pause animated wallpapers via [mpvpaper-stop](https://github.com/pvtoari/mpvpaper-stop) (dependencies: cmake, cjson)
   - Used at `set-wallpaper.sh` and `check-video.sh` in `~/.config/hypr/scripts/wallpapers/` to save CPU/RAM usage.
+- This rice uses `wofi` to run actions and apps.
+  - Install via `sudo pacman -S wofi`.
+  - Some apps like `mpvpaper` needs to be ran using `prime-run` and `gamemoderun`
+    - Install via `sudo pacman -S nvidia-prime gamemode`.
+  - (Automatically provided by `pkglist.txt` if you used the `install.sh` bash file)
 - `hyprland` uses `hyprdile` and `hyprlock`.
   - Install them via `sudo pacman -S hyprlock hypridle`. (Automatically provided by `pkglist.txt` if you used the `install.sh` bash file)
 - Waybar was set up to use `kitty`, `Mozilla Firefox`, and `dolphin`. You can change this if you want at `~/.config/waybar/config.jsonc`.
