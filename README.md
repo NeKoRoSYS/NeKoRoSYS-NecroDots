@@ -10,8 +10,6 @@ Based on [mkhmtolzhas' rice](https://github.com/mkhmtolzhas/Invincible-Dots). I 
 | [🚀 Features](#features) |
 | [📝 Notes](#notes) |
 
-<br>
-<br>
 
 ## Dependencies
 - Auto-pause animated wallpapers via [mpvpaper-stop](https://github.com/pvtoari/mpvpaper-stop) (dependencies: cmake, cjson)
