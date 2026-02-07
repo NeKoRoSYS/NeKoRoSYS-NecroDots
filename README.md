@@ -7,6 +7,10 @@ Based on [mkhmtolzhas' rice](https://github.com/mkhmtolzhas/Invincible-Dots).
   - use `git clone https://github.com/NeKoRoSYS/NeKoRoSYS-Arch-Dotfiles`
   - then `cd NeKoRoSYS-Arch-Dotfiles`
   - and finally, `bash install.sh` to install the dotfiles.
+    - You can freely customize `flatpak.txt` and `pkglist.txt` before running `install.sh`.
+    - The installer assumes you already installed `base-devel`, `git`, `yay`, `flatpak`.
+    - The installer assumes you have turned on mirror link downloads for `pacman`.
+    - Don't be scared if `sed` says it can't read a file or directory in the installer. It's part of the function to replace every occurence of `/home/nekorosys` with your username and it simply cant find one at those locations.
 - **Advanced Wallpaper Handling**
   - Supports both image (via swww) and video (via mpvpaper) formats
     - `mpvpaper` automatically stops if an app is on fullscreen mode to save CPU, RAM, or GPU space.
@@ -18,10 +22,6 @@ Based on [mkhmtolzhas' rice](https://github.com/mkhmtolzhas/Invincible-Dots).
 <br>
 
 ## Notes
-- The installer assumes you already installed `base-devel`, `git`, `yay`, `flatpak`.
-- The installer assumes you have turned on mirror link downloads for `pacman`.
-- Don't be scared if sed says it can't read a file or directory in the installer. It's part of the function to replace every occurence of `/home/nekorosys` with your username and it simply cant find one at those locations.
-- You can freely customize `flatpak.txt` and `pkglist.txt`
 - **IMPORTANT** This rice originally uses my dual-monitor setup. Enter `grep -r "DP-1" ~/.config/` and `grep -r "eDP-1" ~/.config/` to find all occurences of my monitors being mentioned so you can replace them with your own.
   - `start-dashboard.sh` creates a grid layout for a 1920x1080 display, however I also provided a 1280x720 version of the dashboard in `~/.config/hypr/windowrules.conf/`.
 <br>
