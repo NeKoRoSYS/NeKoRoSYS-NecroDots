@@ -86,7 +86,6 @@ You have two options:
 
 ## TODO
 - Improve Hyprlock UI
-- Select Waybar skins
 - Select Fastfetch presets
 <br>
 
