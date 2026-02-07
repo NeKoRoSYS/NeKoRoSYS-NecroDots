@@ -3,18 +3,18 @@ Based on [mkhmtolzhas' rice](https://github.com/mkhmtolzhas/Invincible-Dots).
  
 
 ## Features
-- One-tap installer script
+- **One-tap Installer Script**
   - use `git clone https://github.com/NeKoRoSYS/NeKoRoSYS-Arch-Dotfiles`
   - then `cd NeKoRoSYS-Arch-Dotfiles`
   - and finally, `bash install.sh` to install the dotfiles.
-- Advanced wallpaper handling
+- **Advanced Wallpaper Handling**
   - Supports both image (via swww) and video (via mpvpaper) formats
-    - mpvpaper automatically stops if an app is on fullscreen mode to save CPU, RAM, or GPU space
-  - Border colors and UI elements have dynamic color schemes
-- Familiar waybar setup
-  - Sleek and straightforward design
-  - Built to feel like a windows taskbar
-    - Choose to start an app, change workspaces, or select power options like Lock, Sleep, Shut Down, Reboot, and Sign Out
+    - `mpvpaper` automatically stops if an app is on fullscreen mode to save CPU, RAM, or GPU space.
+  - Border colors and UI elements have dynamic color schemes.
+- **Familiar Waybar Setup**
+  - Sleek and straightforward design.
+  - Built to feel like a Windows taskbar.
+    - Choose to start an app, change workspaces, or select power options like Lock, Sleep, Shut Down, Reboot, and Sign Out.
  
 
 ## Notes
@@ -27,6 +27,7 @@ Based on [mkhmtolzhas' rice](https://github.com/mkhmtolzhas/Invincible-Dots).
  
 
 ## Dependencies
-- Auto-stop animated wallpapers https://github.com/pvtoari/mpvpaper-stop (dependencies: cmake, cjson)
+- Auto-pause animated wallpapers via [mpvpaper-stop](https://github.com/pvtoari/mpvpaper-stop) (dependencies: cmake, cjson)
   - Used at `set-wallpaper.sh` and `check-video.sh` in `~/.config/hypr/scripts/wallpapers/` to save CPU/RAM usage.
-- The waybar was set up to use kitty, Mozilla Firefox, and dolphin. You can change this if you want at `~/.config/waybar/config.jsonc`.
+- `hyprland` uses `hyprdile` and `hyprlock`, install them via `sudo pacman -S hyprlock hypridle`.
+- The `waybar` was set up to use kitty, Mozilla Firefox, and dolphin. You can change this if you want at `~/.config/waybar/config.jsonc`.
