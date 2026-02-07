@@ -1,7 +1,7 @@
 # NeKoRoSYS's Arch Dotfiles
 Based on [mkhmtolzhas' rice](https://github.com/mkhmtolzhas/Invincible-Dots).
 <br>
-
+<br>
 ## Features
 - **One-tap Installer Script**
   - use `git clone https://github.com/NeKoRoSYS/NeKoRoSYS-Arch-Dotfiles`
