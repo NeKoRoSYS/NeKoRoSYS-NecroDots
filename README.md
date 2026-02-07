@@ -72,6 +72,8 @@ Based on [mkhmtolzhas' rice](https://github.com/mkhmtolzhas/Invincible-Dots). I 
 
 ## TODO
 - Improve Hyprlock UI
+- Select Waybar skins
+- Select Fastfetch presets
 
 <br>
 
