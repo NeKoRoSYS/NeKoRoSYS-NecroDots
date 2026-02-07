@@ -12,6 +12,7 @@ Based on [mkhmtolzhas' rice](https://github.com/mkhmtolzhas/Invincible-Dots).
   - Border colors and UI elements have dynamic color schemes
 - Familiar waybar setup
   - Built to feel like a windows taskbar, but with a sleek and straightforward UI/UX design
+    - Choose to start an app, change workspaces, or select power options like Lock, Sleep, Shut Down, Reboot, and Sign Out
 
 ## Notes
 - The installer assumes you already installed `base-devel`, `git`, `yay`, `flatpak`.
