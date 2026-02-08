@@ -156,3 +156,4 @@ Mostly personal notes just in case I switch over to another PC.
         }
       }
     ]```
+  - `wpctl set-default microphoneID`
