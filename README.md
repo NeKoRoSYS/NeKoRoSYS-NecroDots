@@ -125,7 +125,8 @@ Mostly personal notes just in case I switch over to another PC.
   - `nano ~/.config/pipewire/pipewire.conf.d/99-input-denoising.conf`
     ```json
     context.modules = [
-{   name = libpipewire-module-filter-chain
+    {
+    name = libpipewire-module-filter-chain
     args = {
         node.description = "Noise Canceling Source"
         media.name       = "Noise Canceling Source"
@@ -151,7 +152,7 @@ Mostly personal notes just in case I switch over to another PC.
             node.name   = "rnnoise_source"
             media.class = Audio/Source
             audio.rate   = 48000
+          }
         }
-    }
-}
-]```
+      }
+    ]```
