@@ -33,7 +33,7 @@ fi
 if [ -f "flatpak.txt" ]; then
     echo -e "${BLUE}Installing packages from flatpak.txt using flatpak...${NC}"
     flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
-    cat installed_flatpaks.txt | xargs flatpak install -y
+    cat flatpak.txt | xargs flatpak install -y
 else
     echo -e "${RED}Error: flatpak.txt not found!${NC}"
     exit 1
