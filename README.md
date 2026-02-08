@@ -41,6 +41,7 @@ Based on [mkhmtolzhas' rice](https://github.com/mkhmtolzhas/Invincible-Dots). I 
 <br>
 
 ## Features
+NeKoRoSYS's HyprDots focuses on simplicity and modularity.
 - **One-tap Installer Script**
   - use `git clone https://github.com/NeKoRoSYS/NeKoRoSYS-Arch-Dotfiles`
   - then `cd NeKoRoSYS-Arch-Dotfiles`
@@ -52,6 +53,7 @@ Based on [mkhmtolzhas' rice](https://github.com/mkhmtolzhas/Invincible-Dots). I 
 - **Window Controls**
   - Maximize
   - Fullscreen
+  - Toggle Opacity
   - Toggle Floating Window
   - Pseudo-floating/organized windows
   - Change tile placement
