@@ -42,10 +42,36 @@ fi
 echo -e "${BLUE}Installing Pywal backend dependencies...${NC}"
 pip install haishoku colorthief --break-system-packages 2>/dev/null || pip install haishoku colorthief
 
+backup_config() {
+    if [ -d "$1" ]; then
+        BACKUP_NAME="${1}_backup_$(date +%Y%m%d_%H%M%S)"
+        echo -e "${BLUE}Backing up existing $(basename $1) to $(basename $BACKUP_NAME)${NC}"
+        mv "$1" "$BACKUP_NAME"
+    fi
+}
+
+backup_config ~/.config/mako
+backup_config ~/.config/fastfetch
+backup_config ~/.config/kitty
+backup_config ~/.config/systemd
+backup_config ~/.config/wallpapers
+backup_config ~/.config/hypr
+backup_config ~/.config/waybar
+backup_config ~/.config/wofi
+
 # 3. Create structure and Copy Configs
 echo -e "${BLUE}Deploying configuration files...${NC}"
 mkdir -p ~/.config
 cp -rv .config ~/
+
+PRIMARY_MONITOR=$(hyprctl monitors | grep "Monitor" | awk '{print $2}' | head -n 1)
+
+if [ -n "$PRIMARY_MONITOR" ]; then
+    echo -e "${BLUE}Detected monitor: $PRIMARY_MONITOR. Updating configs...${NC}"
+    find "$HOME/.config" -type f -exec sed -i "s/DP-1/$PRIMARY_MONITOR/g" {} +
+    find "$HOME/.config" -type f -exec sed -i "s/eDP-1/$PRIMARY_MONITOR/g" {} +
+fi
+
 cp .face.icon ~/
 cp change-avatar.sh ~/
 
@@ -55,7 +81,7 @@ SEARCH="/home/nekorosys"
 REPLACE="/home/$USER"
 
 echo -e "${BLUE}Replacing $SEARCH with $REPLACE in config files...${NC}"
-find "$HOME/.config" -type f -exec grep -l "$SEARCH" {} + | xargs -r sed -i "s|$SEARCH|$REPLACE|g"
+find "$HOME/.config" -type f -exec grep -l "$SEARCH" {} + 2>/dev/null | xargs -r sed -i "s|$SEARCH|$REPLACE|g" 2>/dev/null
 
 # 6. Permissions and Services
 echo -e "${BLUE}Setting script permissions...${NC}"
