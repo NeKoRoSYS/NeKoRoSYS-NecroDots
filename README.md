@@ -206,3 +206,11 @@ Mostly personal notes just in case I switch over to another PC. Do NOT copy my G
 
 ### Quality-of-Life
 - Install [Hypremoji](https://github.com/Musagy/hypremoji)
+<br>
+
+## Sponsorship
+I am an aspiring software and game developer that currently do stuff solo. [Donating](https://ko-fi.com/nekorosys) is not a must, but it will be immensely cherished and appreciated!
+<br>
+
+## Contribution
+Something's wrong with the repo or you know better workarounds and alternatives? You can either make an issue or a pull request. It will be very much appreciated!
