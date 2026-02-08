@@ -46,6 +46,8 @@ pip install haishoku colorthief --break-system-packages 2>/dev/null || pip insta
 echo -e "${BLUE}Deploying configuration files...${NC}"
 mkdir -p ~/.config
 cp -rv .config ~/
+cp .face.icon ~/
+cp change-avatar.sh ~/
 
 # 4. Path Replacement Logic
 # This handles the replacement in the newly copied ~/.config files
