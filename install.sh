@@ -102,12 +102,14 @@ if [command -v "bash" >/dev/null 2>&1]; then
 fi
 
 cp -r .p10k.zsh ~/
-
 cp .face.icon ~/
 cp change-avatar.sh ~/
+cp bin ~/
 
 echo -e "${BLUE}Setting script permissions...${NC}"
-find ~/.config/hypr/scripts -name "*.sh" -exec chmod +x {} + 2>/dev/null
+find ~/.config/ -name "*.sh" -exec chmod +x {} + 2>/dev/null
+find ~/bin/ -name "*.sh" -exec chmod +x {} + 2>/dev/null
+find ~/bin/ -name "*" -exec chmod +x {} + 2>/dev/null
 echo -e "${BLUE}Enabling waybar...${NC}"
 sudo systemctl enable ~/.config/systemd/user/waybar.service
 
