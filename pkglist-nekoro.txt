@@ -53,7 +53,6 @@ linux
 linux-firmware
 linux-headers
 linux-wallpaperengine-git
-mako
 meson
 mpvpaper
 mtools
@@ -69,7 +68,6 @@ nvidia-580xx-dkms
 nvidia-580xx-settings
 nvidia-prime
 openssh
-optimus-manager-qt
 os-prober
 pacman-contrib
 pavucontrol
@@ -115,7 +113,6 @@ xdg-desktop-portal-gtk
 xdg-desktop-portal-hyprland
 xdg-terminal-exec
 yay
-yay-debug
 zram-generator
 zsh
 zsh-theme-powerlevel10k-git
