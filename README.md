@@ -69,7 +69,7 @@ NeKoRoDOTS is currently being developed by one person (*cough* [Contribution](#c
 | Implement QOL features | ✅ |
 | Optimizations | ✅ |
 | Color Handling - Replace pywal6 with wallust | ❌ |
-| Dmenu Overhaul - Replace wofi with rofi | ⏳ |
+| Dmenu Overhaul - Replace wofi with rofi | 🛠 |
 | Support for other distros | ⏳ |
 
 The following are what NeKoRoDOTS currently offers:
