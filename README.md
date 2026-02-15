@@ -72,8 +72,6 @@ NeKoRoDOTS is currently being developed by one person (*cough* [Contribution](#c
 | Dmenu Overhaul - Replace wofi with rofi | ⏳ |
 | Support for other distros | ⏳ |
 
-wallust seems to be bad at handling light mode. It just inverts everything and call's it a day. I don't like that. pywal16 may be slower but it actually correctly represents colors in light mode without gimmicky workarounds. If anyone can tell me how to fix this, I might actually consider the switch but for now I'll go with pywal16. The current `wallust.toml` config file in the repo is what I believe would be the best way to replicate the results we can get with pywal6 (don't worry, it's not slow even when set to full. `apply-theme.sh` uses cached thumbnails of the wallpapers which has lower resolutions).
-
 The following are what NeKoRoDOTS currently offers:
 - **One-tap Installer Script**
   - Use `git clone https://github.com/NeKoRoSYS/NeKoRoDOTS`
